@@ -1,7 +1,8 @@
 'use strict'
 
 const cart = document.getElementById('cart');
-const cartList = document.querySelector('#cart-list tbody')
+const cartList = document.querySelector('#cart-list tbody');
+const emptyCartButton = document.querySelector('#empty-cart')
 
 addClickListeners()
 
@@ -13,8 +14,8 @@ function addClickListeners() {
   }
 
 
-  cart.addEventListener('click', deleteCart)
-
+cart.addEventListener('click', deleteCart)
+emptyCartButton.addEventListener('click', emptyCart)
 
 function addCart(e) {
     e.preventDefault();
@@ -53,9 +54,13 @@ function pushCart(objectSession) {
 function deleteCart(e) {
     e.preventDefault();
 
-    let deleteSession 
+    let deleteSession;
     
     if(e.target.classList.contains('delete-course')) {
         e.target.parentElement.parentElement.remove()
     }
+}
+
+function emptyCart() {
+    
 }
