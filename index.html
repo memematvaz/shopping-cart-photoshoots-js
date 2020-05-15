@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +10,75 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
-<header id="header" class="header">
-    <div class="container">
-        <div class="row">
-            <div class="four columns">
-                <img src="img/logo.jpg" id="logo">
-            </div>
-            <div class="two columns u-pull-right">
-                <ul>
-                    <li class="submenu">
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
                             <img src="img/cart.png" id="img-cart">
                             <div id="cart">
-                                    
-                                    <table id="lista-carrito" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
 
-                                    <a href="#" id="empty-cart" class="button u-full-width">Vaciar Carrito</a>
+                                <table id="cart-list" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="empty-cart" class="button u-full-width">Vaciar Carrito</a>
                             </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div> 
-    </div>
+        </div>
     </header>
 
 
     <div id="hero">
         <div class="container">
             <div class="row">
-                    <div class="six columns">
-                        <div class="hero-container">
-                                <h2>Escoge tu sesión</h2>
-                                <p>Todas las sesiones a 50€</p>
-                                <form action="#" id="search" method="post" class="form">
-                                    <input class="u-full-width" type="text" placeholder="¿Que tipo de sesión quieres?" id="search">
-                                    <input type="submit" id="submit-search" class="submit-search">
-                                </form>
-                        </div>
+                <div class="six columns">
+                    <div class="hero-container">
+                        <h2>Escoge tu sesión</h2>
+                        <p>Todas las sesiones a 50€</p>
+                        <form action="#" id="search" method="post" class="form">
+                            <input class="u-full-width" type="text" placeholder="¿Que tipo de sesión quieres?"
+                                id="search">
+                            <input type="submit" id="submit-search" class="submit-search">
+                        </form>
                     </div>
-            </div> 
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="bar">
         <div class="container">
             <div class="row">
-                    <div class="four columns icon icon1">
-                        <p>Sesiones de fotos profesionales<br>
+                <div class="four columns icon icon1">
+                    <p>Sesiones de fotos profesionales<br>
                         Con 10 años de experiencia</p>
-                    </div>
-                    <div class="four columns icon icon2">
-                        <p>Todo tipo de sesiones especializadas<br>
+                </div>
+                <div class="four columns icon icon2">
+                    <p>Todo tipo de sesiones especializadas<br>
                         Resaltando tu marca personal</p>
-                    </div>
-                    <div class="four columns icon icon3">
-                        <p>Fotografías adaptadas para tu web y redes sociales<br>
+                </div>
+                <div class="four columns icon icon3">
+                    <p>Fotografías adaptadas para tu web y redes sociales<br>
                         ¡Haz con ellas lo que quieras!</p>
-                    </div>
+                </div>
             </div>
         </div>
 
@@ -91,37 +94,40 @@
                         <h4>Parejas</h4>
                         <p>Mneme Mateo</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar Al
+                            Carrito</a>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>En exterior</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
-                        </div>
+                <div class="card">
+                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>En exterior</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="2">Agregar Al
+                            Carrito</a>
                     </div>
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>En interior</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+                <div class="card">
+                    <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>En interior</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="3">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
             </div>
 
-        </div> <!--.row-->
+        </div>
         <div class="row">
             <div class="four columns">
                 <div class="card">
@@ -130,34 +136,37 @@
                         <h4>Comuniones</h4>
                         <p>Mneme Mateo</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar
+                            Al Carrito</a>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso5.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Corporativa</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+                <div class="card">
+                    <img src="img/curso5.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Corporativa</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso6.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Moda</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+                <div class="card">
+                    <img src="img/curso6.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Moda</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -168,88 +177,99 @@
                         <h4>Infantil</h4>
                         <p>Mneme Mateo</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="7">Agregar Al
+                            Carrito</a>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso8.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Arquitectura</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+                <div class="card">
+                    <img src="img/curso8.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Arquitectura</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="8">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso9.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Comercios</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+                <div class="card">
+                    <img src="img/curso9.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Comercios</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="9">Agregar Al
+                            Carrito</a>
+                    </div>
+                </div>
             </div>
-        </div> 
+        </div>
         <div class="row">
-                <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso10.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Mascotas</h4>
-                            <p>Mneme Mateo</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
-                        </div>
-                    </div> 
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso10.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mascotas</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="10">Agregar Al
+                            Carrito</a>
+                    </div>
                 </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/curso11.jpg" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Conciertos</h4>
-                                <p>Mneme Mateo</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
-                            </div>
-                        </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso11.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Conciertos</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="11">Agregar Al
+                            Carrito</a>
+                    </div>
                 </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/curso12.jpg" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Producto</h4>
-                                <p>Mneme Mateo</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">200€  <span class="u-pull-right ">50€</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
-                            </div>
-                        </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso12.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Producto</h4>
+                        <p>Mneme Mateo</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">200€ <span class="u-pull-right ">50€</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="12">Agregar Al
+                            Carrito</a>
+                    </div>
                 </div>
-            </div> 
-    </div>  
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-                    <div class="four columns">
-                        <nav id="secundaria" class="menu">
-                            <a class="enlace" href="https://github.com/memematvaz">¿Quienes Somos?</a>
-                            <a class="enlace" href="https://medium.com/@mnemearie">Blog</a>
-                        </nav>
-                    </div>
-                   
-                         
-                    </div>
+                <div class="four columns">
+                    <nav id="primaria" class="menu">
+                        <a class="enlace" href="https://www.linkedin.com/in/maria-mateo-vazquez/">¿Quién soy?</a>
+                        <a class="enlace" href="https://github.com/memematvaz">GitHub</a>
+                        <a class="enlace" href="https://medium.com/@mnemearie">Blog</a>
+                    </nav>
+                </div>
+                <div>
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="https://twitter.com/mnemearie">Twitter</a>
+                        <a class="enlace" href="https://www.instagram.com/mnemearie/">Instagram</a>
+                    </nav>
+
+                </div>
             </div>
         </div>
     </footer>
@@ -257,4 +277,5 @@
     <script src="js/app.js"></script>
 
 </body>
+
 </html>
