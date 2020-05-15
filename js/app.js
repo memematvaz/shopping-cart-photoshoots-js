@@ -13,6 +13,9 @@ function addClickListeners() {
   }
 
 
+  cart.addEventListener('click', deleteCart)
+
+
 function addCart(e) {
     e.preventDefault();
 
@@ -44,6 +47,15 @@ function pushCart(objectSession) {
             <a href="#" class="delete-course" data-id="${objectSession.id}">X</a>
         </td>`;
 
-        console.log(row)
         cartList.appendChild(row);
+}
+
+function deleteCart(e) {
+    e.preventDefault();
+
+    let deleteSession 
+    
+    if(e.target.classList.contains('delete-course')) {
+        e.target.parentElement.parentElement.remove()
+    }
 }
