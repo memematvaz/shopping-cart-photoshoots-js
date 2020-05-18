@@ -28,13 +28,31 @@ function addCart(e) {
 
 
 function readSessionDates(session) {
+    let sessionsLS;
+
+    sessionsLS = getLocalStorage();
+
+    
+   
     const objectSession = {
         image: session.querySelector('img').src,
         title: session.querySelector('h4').textContent,
         price: session.querySelector('.price span').textContent,
         id: session.querySelector('a').getAttribute('data-id')
     }
-    pushCart(objectSession);
+
+
+  if (sessionsLS.map(obj => obj.id).indexOf(objectSession.id) === -1) {
+
+    
+    
+        pushCart(objectSession);
+
+      
+      } else {
+        alert('Esa sesión ya está en el carrito')
+      }  
+    
 }
 
 function pushCart(objectSession) {
