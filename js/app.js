@@ -4,9 +4,6 @@ const cart = document.getElementById('cart');
 const cartList = document.querySelector('#cart-list tbody');
 const emptyCartButton = document.querySelector('#empty-cart')
 
-
-console.log(document.map(target.h4));
-
 addClickListeners()
 
 function addClickListeners() {
@@ -139,60 +136,19 @@ function readLocalStorage(){
 
     sessionsLS.forEach(function(objectSession)  {
         const row = document.createElement('tr');
-
         row.innerHTML = `
-        <td>
-            <img src="${objectSession.image}">
-        </td>
-        <td>${objectSession.title}</td>
-        <td>${objectSession.price}</td>
-        <td>
-            <a href="#" class="delete-course" data-id="${objectSession.id}">X</a>
-        </td>`;
-
-        cartList.appendChild(row);
-
-
-
-
-
-
-
-       
+            <td>
+                <img src="${objectSession.image}" class="img-cart-session">
+            </td>
+            <td>${objectSession.title}</td>
+            <td>${objectSession.price}</td>
+            <td>
+                <a href="#" class="delete-course" data-id="${objectSession.id}">X</a>
+            </td>`;
+    
+            cartList.appendChild(row);
     });
-    
-};
-
-     {/*   const imageContainer = document.createElement('td')
-        const image = document.createElement('image')
-        const imageContent = image.setAttribute('src', objectSession.image)
-        
-        imageContainer.appendChild(image);
-
-        const title = document.createElement('td');
-        const titleContent = title.innerText = objectSession.title;
-       
-
-        const price = document.createElement('td');
-        const priceContent = price.innerText = objectSession.price;
-    
-
-        const idContainer = document.createElement('td')
-        const id = document.createElement('a')
-        const idAtrribute = id.setAttribute('data-id', objectSession.id);
-        const classAtrribute = id.setAttribute('class', 'delete-course');
-        idContainer.appendChild(id);
-
-        row.appendChild(imageContainer);
-        row.appendChild(title);
-        row.appendChild(price);
-        row.appendChild(id);
-      
-        cartList.appendChild(row);
-    }); */}  
-   
-   
-
+}
 
 function  deleteLocalStorage(session) {
     let sessionsLS;
