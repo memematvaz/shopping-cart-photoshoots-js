@@ -25,7 +25,7 @@ Ejemplo de una web e-commerce en la que puedes agregar diferentes sesiones de fo
 
 1. Descarga o clona el repositorio
 ```sh
-$ git clonehttps://github.com/memematvaz/Cryptocurrency-API.git
+$ git clonehttps://github.com/memematvaz/shopping-cart-photoshoots-js.git
 ```
 2. Abre el proyecto en tu editor de codigo (Visual Sudio Code, Atom, Brackets...)
 
