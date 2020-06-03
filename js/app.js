@@ -59,7 +59,7 @@ function pushCart(objectSession) {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>
-            <img src="${objectSession.image}">
+            <img src="${objectSession.image}" class="img-cart-session">
         </td>
         <td>${objectSession.title}</td>
         <td>${objectSession.price}</td>
